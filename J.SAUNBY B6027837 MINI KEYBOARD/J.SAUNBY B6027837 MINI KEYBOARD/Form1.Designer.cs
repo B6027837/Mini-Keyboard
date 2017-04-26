@@ -49,7 +49,7 @@
             this.button_hash = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.text_status = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -69,6 +69,7 @@
             this.button_mode.TabIndex = 1;
             this.button_mode.Text = "Mode";
             this.button_mode.UseVisualStyleBackColor = false;
+            this.button_mode.Click += new System.EventHandler(this.button_mode_Click);
             // 
             // button_next
             // 
@@ -254,19 +255,20 @@
             this.textBox2.Size = new System.Drawing.Size(141, 20);
             this.textBox2.TabIndex = 20;
             // 
-            // textBox3
+            // text_status
             // 
-            this.textBox3.Location = new System.Drawing.Point(342, 247);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(63, 20);
-            this.textBox3.TabIndex = 21;
+            this.text_status.Location = new System.Drawing.Point(342, 247);
+            this.text_status.Name = "text_status";
+            this.text_status.Size = new System.Drawing.Size(63, 20);
+            this.text_status.TabIndex = 21;
+            this.text_status.Text = "Multi-press";
             // 
             // user_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 488);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.text_status);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button_hash);
@@ -318,7 +320,7 @@
         private System.Windows.Forms.Button button_hash;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox text_status;
     }
 }
 
