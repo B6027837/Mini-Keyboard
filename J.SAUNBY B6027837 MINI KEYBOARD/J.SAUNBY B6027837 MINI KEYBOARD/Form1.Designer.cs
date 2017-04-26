@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.notepad_textbox = new System.Windows.Forms.TextBox();
             this.button_mode = new System.Windows.Forms.Button();
             this.button_next = new System.Windows.Forms.Button();
             this.button_previous = new System.Windows.Forms.Button();
@@ -50,15 +50,26 @@
             this.button13 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.text_status = new System.Windows.Forms.TextBox();
+            this.lb_7 = new System.Windows.Forms.ListBox();
+            this.lb_8 = new System.Windows.Forms.ListBox();
+            this.lb_4 = new System.Windows.Forms.ListBox();
+            this.lb_9 = new System.Windows.Forms.ListBox();
+            this.lb_5 = new System.Windows.Forms.ListBox();
+            this.lb_6 = new System.Windows.Forms.ListBox();
+            this.lb_1 = new System.Windows.Forms.ListBox();
+            this.lb_2 = new System.Windows.Forms.ListBox();
+            this.lb_3 = new System.Windows.Forms.ListBox();
+            this.lb_plus = new System.Windows.Forms.ListBox();
+            this.lb_hash = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // notepad_textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 22);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(575, 215);
-            this.textBox1.TabIndex = 0;
+            this.notepad_textbox.Location = new System.Drawing.Point(22, 22);
+            this.notepad_textbox.Multiline = true;
+            this.notepad_textbox.Name = "notepad_textbox";
+            this.notepad_textbox.Size = new System.Drawing.Size(575, 215);
+            this.notepad_textbox.TabIndex = 0;
             // 
             // button_mode
             // 
@@ -138,6 +149,7 @@
             this.button_7.TabIndex = 8;
             this.button_7.Text = " 7     ..*";
             this.button_7.UseVisualStyleBackColor = false;
+            this.button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // button_8
             // 
@@ -263,11 +275,110 @@
             this.text_status.TabIndex = 21;
             this.text_status.Text = "Multi-press";
             // 
+            // lb_7
+            // 
+            this.lb_7.FormattingEnabled = true;
+            this.lb_7.Location = new System.Drawing.Point(444, 273);
+            this.lb_7.Name = "lb_7";
+            this.lb_7.Size = new System.Drawing.Size(44, 17);
+            this.lb_7.TabIndex = 22;
+            // 
+            // lb_8
+            // 
+            this.lb_8.FormattingEnabled = true;
+            this.lb_8.Location = new System.Drawing.Point(494, 273);
+            this.lb_8.Name = "lb_8";
+            this.lb_8.Size = new System.Drawing.Size(44, 17);
+            this.lb_8.TabIndex = 23;
+            // 
+            // lb_4
+            // 
+            this.lb_4.FormattingEnabled = true;
+            this.lb_4.Location = new System.Drawing.Point(444, 296);
+            this.lb_4.Name = "lb_4";
+            this.lb_4.Size = new System.Drawing.Size(44, 17);
+            this.lb_4.TabIndex = 24;
+            // 
+            // lb_9
+            // 
+            this.lb_9.FormattingEnabled = true;
+            this.lb_9.Location = new System.Drawing.Point(544, 273);
+            this.lb_9.Name = "lb_9";
+            this.lb_9.Size = new System.Drawing.Size(44, 17);
+            this.lb_9.TabIndex = 25;
+            // 
+            // lb_5
+            // 
+            this.lb_5.FormattingEnabled = true;
+            this.lb_5.Location = new System.Drawing.Point(494, 296);
+            this.lb_5.Name = "lb_5";
+            this.lb_5.Size = new System.Drawing.Size(44, 17);
+            this.lb_5.TabIndex = 26;
+            // 
+            // lb_6
+            // 
+            this.lb_6.FormattingEnabled = true;
+            this.lb_6.Location = new System.Drawing.Point(544, 296);
+            this.lb_6.Name = "lb_6";
+            this.lb_6.Size = new System.Drawing.Size(44, 17);
+            this.lb_6.TabIndex = 27;
+            // 
+            // lb_1
+            // 
+            this.lb_1.FormattingEnabled = true;
+            this.lb_1.Location = new System.Drawing.Point(444, 319);
+            this.lb_1.Name = "lb_1";
+            this.lb_1.Size = new System.Drawing.Size(44, 17);
+            this.lb_1.TabIndex = 28;
+            // 
+            // lb_2
+            // 
+            this.lb_2.FormattingEnabled = true;
+            this.lb_2.Location = new System.Drawing.Point(494, 319);
+            this.lb_2.Name = "lb_2";
+            this.lb_2.Size = new System.Drawing.Size(44, 17);
+            this.lb_2.TabIndex = 29;
+            // 
+            // lb_3
+            // 
+            this.lb_3.FormattingEnabled = true;
+            this.lb_3.Location = new System.Drawing.Point(544, 319);
+            this.lb_3.Name = "lb_3";
+            this.lb_3.Size = new System.Drawing.Size(44, 17);
+            this.lb_3.TabIndex = 30;
+            // 
+            // lb_plus
+            // 
+            this.lb_plus.FormattingEnabled = true;
+            this.lb_plus.Location = new System.Drawing.Point(444, 342);
+            this.lb_plus.Name = "lb_plus";
+            this.lb_plus.Size = new System.Drawing.Size(44, 17);
+            this.lb_plus.TabIndex = 31;
+            // 
+            // lb_hash
+            // 
+            this.lb_hash.FormattingEnabled = true;
+            this.lb_hash.Location = new System.Drawing.Point(544, 342);
+            this.lb_hash.Name = "lb_hash";
+            this.lb_hash.Size = new System.Drawing.Size(44, 17);
+            this.lb_hash.TabIndex = 32;
+            // 
             // user_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 488);
+            this.Controls.Add(this.lb_hash);
+            this.Controls.Add(this.lb_plus);
+            this.Controls.Add(this.lb_3);
+            this.Controls.Add(this.lb_2);
+            this.Controls.Add(this.lb_1);
+            this.Controls.Add(this.lb_6);
+            this.Controls.Add(this.lb_5);
+            this.Controls.Add(this.lb_9);
+            this.Controls.Add(this.lb_4);
+            this.Controls.Add(this.lb_8);
+            this.Controls.Add(this.lb_7);
             this.Controls.Add(this.text_status);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button13);
@@ -289,7 +400,7 @@
             this.Controls.Add(this.button_previous);
             this.Controls.Add(this.button_next);
             this.Controls.Add(this.button_mode);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.notepad_textbox);
             this.Name = "user_interface";
             this.Text = "v";
             this.ResumeLayout(false);
@@ -299,7 +410,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox notepad_textbox;
         private System.Windows.Forms.Button button_mode;
         private System.Windows.Forms.Button button_next;
         private System.Windows.Forms.Button button_previous;
@@ -321,6 +432,17 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox text_status;
+        private System.Windows.Forms.ListBox lb_7;
+        private System.Windows.Forms.ListBox lb_8;
+        private System.Windows.Forms.ListBox lb_4;
+        private System.Windows.Forms.ListBox lb_9;
+        private System.Windows.Forms.ListBox lb_5;
+        private System.Windows.Forms.ListBox lb_6;
+        private System.Windows.Forms.ListBox lb_1;
+        private System.Windows.Forms.ListBox lb_2;
+        private System.Windows.Forms.ListBox lb_3;
+        private System.Windows.Forms.ListBox lb_plus;
+        private System.Windows.Forms.ListBox lb_hash;
     }
 }
 
