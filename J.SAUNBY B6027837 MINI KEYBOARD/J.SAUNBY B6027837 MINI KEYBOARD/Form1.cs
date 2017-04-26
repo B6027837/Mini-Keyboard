@@ -13,6 +13,9 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
 {
     public partial class user_interface : Form
     {
+        bool clicked = true;
+        int button_clicked = -1;
+
         public user_interface()
         {
             InitializeComponent();
@@ -30,11 +33,39 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
                 text_status.Text = "Multi-press";
             }
 
-            //if statement 
+            
         }
 
         private void button_7_Click(object sender, EventArgs e)
         {
+            if (clicked == true)
+            {
+                global_listbox.Items.AddRange(lb_7.Items); //copying the items in the button 7 listbox into the global listbox.
+            }
+
+            letterTimer.Enabled = false;
+            button_clicked++;
+            letterTimer.Enabled = true;
+        }
+
+        private void lb_7_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void global_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void letterTimer_Tick(object sender, EventArgs e)
+        {
+            int clicked = -1;
+            letterTimer.Enabled = false;
+
+            wordBuilder.AppendText(global_listbox.Items[clicked].ToString());
+
+            
 
         }
         
