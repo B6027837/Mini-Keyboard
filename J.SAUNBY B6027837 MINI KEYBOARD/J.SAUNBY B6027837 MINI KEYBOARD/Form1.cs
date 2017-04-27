@@ -40,6 +40,7 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
         {
             if (clicked == true)
             {
+                global_listbox.Items.Clear();
                 global_listbox.Items.AddRange(lb_7.Items); //copying the items in the button 7 listbox into the global listbox.
             }
 
@@ -50,23 +51,66 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
 
         private void lb_7_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void global_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void letterTimer_Tick(object sender, EventArgs e)
         {
-            int clicked = -1;
+
             letterTimer.Enabled = false;
 
-            wordBuilder.AppendText(global_listbox.Items[clicked].ToString());
+            notepad_textbox.AppendText(global_listbox.Items[button_clicked].ToString());
+            button_clicked = -1;
 
-            
+        }
 
+        private void button_8_Click(object sender, EventArgs e)
+        {
+            //copying the items in the button 8 listbox into the global listbox.
+            if (clicked == true)
+            {
+                global_listbox.Items.Clear();
+                global_listbox.Items.AddRange(lb_8.Items);
+
+                text_sequence.AppendText("8".ToString());
+               
+                letterTimer.Enabled = false;
+                button_clicked++;
+
+                letterTimer.Enabled = true;
+            }
+
+            letterTimer.Enabled = false;
+            button_clicked++;
+            letterTimer.Enabled = true;
+
+        }
+
+        private void button_9_Click(object sender, EventArgs e)
+        {
+            //copying the items in the button 9 listbox into the global listbox.
+            if (clicked == true)
+            {
+                global_listbox.Items.Clear();
+                global_listbox.Items.AddRange(lb_9.Items); 
+            }
+
+            letterTimer.Enabled = false;
+            button_clicked++;
+            letterTimer.Enabled = true;
+        }
+
+        private void user_interface_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            text_sequence.Text = string.Empty;
         }
         
     }
