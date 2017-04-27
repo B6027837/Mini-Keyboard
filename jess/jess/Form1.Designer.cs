@@ -186,6 +186,7 @@
             this.button_5.TabIndex = 11;
             this.button_5.Text = "5  JKL";
             this.button_5.UseVisualStyleBackColor = false;
+            this.button_5.Click += new System.EventHandler(this.button_5_Click);
             // 
             // button_4
             // 
@@ -196,6 +197,7 @@
             this.button_4.TabIndex = 12;
             this.button_4.Text = "4  GHI";
             this.button_4.UseVisualStyleBackColor = false;
+            this.button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // button_9
             // 
