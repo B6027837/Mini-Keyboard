@@ -220,6 +220,7 @@
             this.button_3.TabIndex = 14;
             this.button_3.Text = "3 WXYZ";
             this.button_3.UseVisualStyleBackColor = false;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // button_2
             // 

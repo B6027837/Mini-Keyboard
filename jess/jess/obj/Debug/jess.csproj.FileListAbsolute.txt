@@ -16,3 +16,12 @@ C:\Users\Jess\Desktop\jess\jess\obj\Debug\jess.csprojResolveAssemblyReference.ca
 C:\Users\Jess\Desktop\jess\jess\obj\Debug\J.SAUNBY_B6027837_MINI_KEYBOARD.user_interface.resources
 C:\Users\Jess\Desktop\jess\jess\obj\Debug\jess.Properties.Resources.resources
 C:\Users\Jess\Desktop\jess\jess\obj\Debug\jess.csproj.GenerateResource.Cache
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\bin\Debug\jess.exe.config
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\jess.exe
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\jess.pdb
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\bin\Debug\jess.exe
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\bin\Debug\jess.pdb
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\jess.csprojResolveAssemblyReference.cache
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\J.SAUNBY_B6027837_MINI_KEYBOARD.user_interface.resources
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\jess.Properties.Resources.resources
+C:\Users\Jess\Desktop\Mini-Keyboard-master\jess\jess\obj\Debug\jess.csproj.GenerateResource.Cache
