@@ -201,5 +201,28 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
             letterTimer.Enabled = true;
         }
 
+        private void button_1_Click(object sender, EventArgs e)
+        {
+            //if statement to copy the corresponding buttons into the word builder box
+            if (clicked == true)
+            {
+                //clears the global listbox before proceeding
+                global_Listbox.Items.Clear();
+                //adds what has been added into the box for the corresponding button number
+                global_Listbox.Items.AddRange(lb_1.Items);
+
+                //
+                text_sequence.AppendText("1".ToString());
+
+            }
+
+            //disables the timer
+            letterTimer.Enabled = false;
+            button_clicked++;
+
+            //enables the timer when button is clicked
+            letterTimer.Enabled = true;
+        }
+
     }
 }
