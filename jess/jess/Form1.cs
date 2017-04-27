@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyDialogs;
-//re-added My Dialogs
+//removed MyDialogs.cs
 namespace J.SAUNBY_B6027837_MINI_KEYBOARD
 {
     public partial class user_interface : Form
@@ -48,7 +47,7 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
                 //adds what has been added into the box for the corresponding button number
                 global_Listbox.Items.AddRange(lb_7.Items); 
 
-                //
+                
                 text_sequence.AppendText("7".ToString());
 
             }
@@ -71,7 +70,7 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
             //disables the timer
             letterTimer.Enabled = false;
 
-            //adds the text in the word builder when clicked
+            //adds the text in the word builder when clicked and disappears from the rich text box
             wordBuilder.AppendText(global_Listbox.Items[button_clicked].ToString());
             button_clicked = -1;
 
@@ -271,29 +270,6 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
             letterTimer.Enabled = true;
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            //if statement to copy the corresponding buttons into the word builder box
-            if (clicked == true)
-            {
-                //clears the global listbox before proceeding
-                global_Listbox.Items.Clear();
-                //adds what has been added into the box for the corresponding button number
-                global_Listbox.Items.AddRange(lb_hash.Items);
-
-                //
-                text_sequence.AppendText("11".ToString());
-
-            }
-
-            //disables the timer
-            letterTimer.Enabled = false;
-            button_clicked++;
-
-            //enables the timer when button is clicked
-            letterTimer.Enabled = true;
-        }
-
         private void button_hash_Click(object sender, EventArgs e)
         {
             //if statement to copy the corresponding buttons into the word builder box
@@ -302,10 +278,10 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
                 //clears the global listbox before proceeding
                 global_Listbox.Items.Clear();
                 //adds what has been added into the box for the corresponding button number
-                global_Listbox.Items.AddRange(lb_plus.Items);
+                global_Listbox.Items.AddRange(lb_.Items);
 
                 //
-                text_sequence.AppendText("plus".ToString());
+                text_sequence.AppendText("hash".ToString());
 
             }
 
@@ -317,15 +293,28 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
             letterTimer.Enabled = true;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void configureToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string num = 2 (MyDialogs.inputBox)("Please enter the delay value you require. 1000 is equal to 1 second delay."));
-        }
+    }//if statement to copy the corresponding buttons into the word builder box
+            if (clicked == true)
+            {
+                //clears the global listbox before proceeding
+                global_Listbox.Items.Clear();
+                //adds what has been added into the box for the corresponding button number
+                global_Listbox.Items.AddRange(lb_5.Items);
 
-    }
+                //
+                text_sequence.AppendText("5".ToString());
+
+            }
+
+            //disables the timer
+            letterTimer.Enabled = false;
+            button_clicked++;
+
+            //enables the timer when button is clicked
+            letterTimer.Enabled = true;
 }
