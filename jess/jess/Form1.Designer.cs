@@ -230,6 +230,7 @@
             this.button_2.TabIndex = 15;
             this.button_2.Text = "2 TUV";
             this.button_2.UseVisualStyleBackColor = false;
+            this.button_2.Click += new System.EventHandler(this.button_2_Click);
             // 
             // button_1
             // 
