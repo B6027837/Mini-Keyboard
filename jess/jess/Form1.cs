@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//removed MyDialogs.cs
+using MyDialogs;
+//re-added My Dialogs
 namespace J.SAUNBY_B6027837_MINI_KEYBOARD
 {
     public partial class user_interface : Form
@@ -268,6 +269,62 @@ namespace J.SAUNBY_B6027837_MINI_KEYBOARD
 
             //enables the timer when button is clicked
             letterTimer.Enabled = true;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            //if statement to copy the corresponding buttons into the word builder box
+            if (clicked == true)
+            {
+                //clears the global listbox before proceeding
+                global_Listbox.Items.Clear();
+                //adds what has been added into the box for the corresponding button number
+                global_Listbox.Items.AddRange(lb_hash.Items);
+
+                //
+                text_sequence.AppendText("11".ToString());
+
+            }
+
+            //disables the timer
+            letterTimer.Enabled = false;
+            button_clicked++;
+
+            //enables the timer when button is clicked
+            letterTimer.Enabled = true;
+        }
+
+        private void button_hash_Click(object sender, EventArgs e)
+        {
+            //if statement to copy the corresponding buttons into the word builder box
+            if (clicked == true)
+            {
+                //clears the global listbox before proceeding
+                global_Listbox.Items.Clear();
+                //adds what has been added into the box for the corresponding button number
+                global_Listbox.Items.AddRange(lb_plus.Items);
+
+                //
+                text_sequence.AppendText("plus".ToString());
+
+            }
+
+            //disables the timer
+            letterTimer.Enabled = false;
+            button_clicked++;
+
+            //enables the timer when button is clicked
+            letterTimer.Enabled = true;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void configureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string num = 2 (MyDialogs.inputBox)("Please enter the delay value you require. 1000 is equal to 1 second delay."));
         }
 
     }

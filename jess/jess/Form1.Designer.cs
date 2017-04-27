@@ -65,6 +65,11 @@
             this.global_listbox = new System.Windows.Forms.ListBox();
             this.wordBuilder = new System.Windows.Forms.RichTextBox();
             this.text_sequence = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // notepad_textbox
@@ -253,6 +258,7 @@
             this.button11.TabIndex = 17;
             this.button11.Text = "#   0.00";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button_hash
             // 
@@ -263,6 +269,7 @@
             this.button_hash.TabIndex = 18;
             this.button_hash.Text = "+ - _";
             this.button_hash.UseVisualStyleBackColor = false;
+            this.button_hash.Click += new System.EventHandler(this.button_hash_Click);
             // 
             // button13
             // 
@@ -492,16 +499,51 @@
             // 
             // text_sequence
             // 
-            this.text_sequence.Location = new System.Drawing.Point(444, 445);
+            this.text_sequence.Location = new System.Drawing.Point(40, 427);
             this.text_sequence.Name = "text_sequence";
             this.text_sequence.Size = new System.Drawing.Size(100, 20);
             this.text_sequence.TabIndex = 35;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(46, 407);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "Sequence";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.configureToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(624, 24);
+            this.menuStrip1.TabIndex = 37;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // configureToolStripMenuItem
+            // 
+            this.configureToolStripMenuItem.Name = "configureToolStripMenuItem";
+            this.configureToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.configureToolStripMenuItem.Text = "Configure";
+            this.configureToolStripMenuItem.Click += new System.EventHandler(this.configureToolStripMenuItem_Click);
             // 
             // user_interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 488);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.text_sequence);
             this.Controls.Add(this.wordBuilder);
             this.Controls.Add(this.global_listbox);
@@ -537,9 +579,13 @@
             this.Controls.Add(this.button_next);
             this.Controls.Add(this.button_mode);
             this.Controls.Add(this.notepad_textbox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "user_interface";
             this.Text = "Mini - Keyboard";
             this.Load += new System.EventHandler(this.user_interface_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,5 +629,9 @@
         private System.Windows.Forms.ListBox global_listbox;
         private System.Windows.Forms.RichTextBox wordBuilder;
         private System.Windows.Forms.TextBox text_sequence;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configureToolStripMenuItem;
     }
 }
